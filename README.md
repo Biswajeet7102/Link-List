@@ -31,7 +31,7 @@ console.log(`${item}`);
 
 ## Arrays
 ### Manipulate arrays with shift for deleting an element from the start and unshift for adding an element to the start.
-```
+```javascript
 // Delete an element from the start of the array
 array.shift();
 

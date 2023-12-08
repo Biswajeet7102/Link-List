@@ -39,3 +39,9 @@ array.shift();
 array.unshift(newValue);
 ```
 
+### Higher Order Functions
+
+## The function which takes fucntion as an arg or return any function
+
+Exapmle
+

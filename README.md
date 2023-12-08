@@ -39,9 +39,49 @@ array.shift();
 array.unshift(newValue);
 ```
 
-### Higher Order Functions
+## Higher Order Functions
 
-## The function which takes fucntion as an arg or return any function
+In programming, **higher-order functions** are functions that either take one or more functions as arguments or return a function as their result. They are a powerful concept in functional programming and provide a flexible way to work with functions.
 
-Exapmle
+### forEach
 
+- **Description:** Iterates over each element of an array and applies a provided function to each element.
+- **Example:**
+  ```javascript
+  const numbers = [1, 2, 3, 4];
+  numbers.forEach((num) => console.log(num * 2));
+  // Output: 2, 4, 6, 8
+  ```
+  
+### map
+
+- **Description:** Creates a new array with the results of calling a provided function on every element in the array.
+- **Example:**
+  ```javascript
+  Copy code
+  const numbers = [1, 2, 3, 4];
+  const doubled = numbers.map((num) => num * 2);
+  // doubled: [2, 4, 6, 8]
+  ```
+### filter
+
+**Description:** Creates a new array with all elements that pass the test implemented by the provided function.
+
+**Example:**
+```javascript
+const numbers = [1, 2, 3, 4];
+const evenNumbers = numbers.filter((num) => num % 2 === 0);
+// evenNumbers: [2, 4]
+```
+
+### Reduce
+
+**Description**: Applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
+**Example:**
+```javascript
+Copy code
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((acc, num) => acc + num, 0);
+// sum: 10
+```
+These higher-order functions are commonly used for their conciseness, readability, and the ability to create more expressive and declarative code.
